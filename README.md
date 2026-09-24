@@ -23,5 +23,7 @@ Repository for the Deep Learning and Generative AI laboratory, "Alexandru Ioan C
 
 
 ## Table of contents
+* [Lab01](./Lab01): Intro, Advanced Tensor Operations, PyTorch Recap (Homework 1: Multi Layer Perceptron + Backpropagation)
+
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

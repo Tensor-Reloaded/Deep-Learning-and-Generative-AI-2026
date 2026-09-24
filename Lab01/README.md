@@ -22,7 +22,7 @@ Advanced (for students who want to learn more):
 * Considering following the [roadmap](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/foundations/roadmap.md) at your own pace.
 * <details><summary>Benchmarking & compiling</summary><ul>
   <li> Advanced Benchmarking in PyTorch: https://pytorch.org/tutorials/recipes/recipes/benchmark.html </li>
-  <li> PyTorch compiler: docs.pytorch.org/docs/stable/user_guide/torch_compiler/torch.compiler.html </li>
+  <li> PyTorch compiler: https://docs.pytorch.org/docs/stable/user_guide/torch_compiler/torch.compiler.html </li>
   <li> PyTorch compile: https://docs.pytorch.org/tutorials/intermediate/torch_compile_tutorial.html 
   <ul> <li> `torch.compile` does not work easily work on Windows systems! </li></ul>
   </li>

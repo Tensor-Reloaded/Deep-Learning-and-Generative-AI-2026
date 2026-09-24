@@ -9,7 +9,7 @@ Lab Notebooks:
 3. Recapitulate or start working through the [beginner PyTorch](https://github.com/Tensor-Reloaded/AI-Learning-Hub/tree/main/resources/beginner_pytorch#beginner-pytorch) tutorial (will be continued in the next lab).
 
 ***
-Homework 1: https://www.kaggle.com/t/90d77850b6e2470d938ab0154318844f
+Homework 1: https://www.kaggle.com/t/3fd9449b92c34a358a3034e4b3545734 (you must use this link to join).
 
 ***
 

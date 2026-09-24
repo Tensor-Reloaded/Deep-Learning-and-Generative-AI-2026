@@ -20,6 +20,7 @@ For self-study (for students who want to pass):
 
 Advanced (for students who want to learn more):
 * Considering following the [roadmap](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/foundations/roadmap.md) at your own pace.
+* Check https://mlsysbook.ai/tinytorch/.
 * <details><summary>Benchmarking & compiling</summary><ul>
   <li> Advanced Benchmarking in PyTorch: https://pytorch.org/tutorials/recipes/recipes/benchmark.html </li>
   <li> PyTorch compiler: https://docs.pytorch.org/docs/stable/user_guide/torch_compiler/torch.compiler.html </li>

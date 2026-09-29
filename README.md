@@ -1,6 +1,6 @@
 ![image_clipdrop-enhance](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2023/assets/8055539/5965f7aa-34ad-4899-b2af-be3cc084cb96)
 
-# [Deep-Learning-and-Generative-AI-2026](https://sites.google.com/view/rbenchea/advanced-chapters-of-neural-networks)
+# [Deep-Learning-and-Generative-AI-2026](https://sites.google.com/view/rbenchea/deep-learning-generative-ai)
 
 Repository for the Deep Learning and Generative AI laboratory, "Alexandru Ioan Cuza" University, Faculty of Computer Science, Master degree.
 

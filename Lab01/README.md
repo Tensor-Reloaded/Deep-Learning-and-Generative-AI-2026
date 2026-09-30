@@ -17,6 +17,12 @@ For self-study (for students who want to pass):
 * [Neural Networks (chapter 1 - chapter 4)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) (animated introduction to neural networks and backpropagation)
 * [Backpropagation example, from scratch](https://drive.google.com/file/d/11pFnI-NvGjAPgBb2nZKVj2dtE3dVI8qe/view)
 ***
+Enhancing understanding: 
+* [The Misconception that Almost Stopped AI [How Models Learn Part 1]](https://www.youtube.com/watch?v=NrO20Jb-hy0)
+* [The F=ma of Artificial Intelligence [Backpropagation, How Models Learn Part 2]](https://www.youtube.com/watch?v=VkHfRKewkWw)
+* [Why Deep Learning Works Unreasonably Well [How Models Learn Part 3]](https://www.youtube.com/watch?v=qx7hirqgfuU)
+* [What the Books Get Wrong about AI [Double Descent]](https://www.youtube.com/watch?v=z64a7USuGX0)
+***
 
 Advanced (for students who want to learn more):
 * Considering following the [roadmap](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/foundations/roadmap.md) at your own pace.

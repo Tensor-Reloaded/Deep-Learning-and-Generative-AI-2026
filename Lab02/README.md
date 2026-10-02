@@ -24,7 +24,7 @@ You will get several bonus points (5 to 10) if you do all exercises from "Infere
 ***
 
 For self-study (for students who want to pass):
-* [Neural Networks (chapter 1 - chapter 4)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) (animated introduction to neural networks and backpropagation) - last chance before Homework 1
+* [Neural Networks (chapter 1 - chapter 4)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) (animated introduction to neural networks) - last chance before Homework 1
 * Dataset: https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset
 * DataLoader: https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader
 * TorchVision transforms getting started: https://docs.pytorch.org/vision/main/auto_examples/transforms/plot_transforms_getting_started.html

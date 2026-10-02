@@ -16,9 +16,9 @@ Lab Notebook
 The exercises from this notebook are a good preparation for homework 2.
 
 <details><summary>Bonus points</summary>
-You will get several bonus points if you do all 4 exercises from "Complex Yet Simple Training Pipeline" and submit them until Lab 4.
+You will get several bonus points (5 to 10) if you do all exercises from "Complex Yet Simple Training Pipeline" and submit them until Lab 4.
 <br>
-You will get several bonus points if you do all MLOps exercises from "Inference Optimization And TTA" and submit them until Lab 5.
+You will get several bonus points (5 to 10) if you do all exercises from "Inference Optimization And TTA" and submit them until Lab 5.
 </details>
 
 ***

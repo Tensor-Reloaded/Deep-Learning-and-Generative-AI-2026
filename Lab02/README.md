@@ -41,7 +41,11 @@ Advanced (for students who want to learn more):
   * [On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima](https://arxiv.org/abs/1609.04836) (Keskar, 2017)
 * `pin_memory` & `non_blocking=True`:
    * Pinning memory in DataLoaders: https://pytorch.org/docs/stable/notes/cuda.html#use-pinned-memory-buffers
-   * How does pinned memory actually work: https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/ 
+   * How does pinned memory actually work: https://developer.nvidia.com/blog/how-optimize-data-transfers-cuda-cc/
+* Inference frameworks:
+  * https://github.com/nvidia/tensorrt
+  * https://github.com/openvinotoolkit/openvino
+  * https://github.com/onnx/onnx
 * Data Augmentation for CV:
   * [RandAugment: Practical automated data augmentation with a reduced search space](https://arxiv.org/abs/1909.13719)
   * [Regularization Strategy to Train Strong Classifiers with Localizable Features](https://arxiv.org/abs/1905.04899)

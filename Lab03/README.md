@@ -8,10 +8,13 @@ Lab Notebook
 
 
 <details><summary>Bonus points</summary>
-Bonus points will be awarded for an open-source Python library published on PyPI that implements unweighted and sample-weighted F1 score kernels in C++ using the PyTorch Tensor API. 
+1. Bonus points will be awarded for creating an open-source Python library published on PyPI that implements unweighted and sample-weighted F1 score kernels in C++ using the PyTorch Tensor API. 
 It must support CPU and CUDA tensors, provide wheels for common platforms, and fall back to compilation during <code>pip install</code> when no compatible wheel is available. 
 Custom CUDA kernels are not required.
 Interested students should contact me for all requirements.
+<br>
+2. Bonus points will be awarded for contributing significant improvements to <a href="https://github.com/fii-optim-lab/label-metrics" target="_blank" rel="noopener noreferrer">label-metrics</a>: adding surface-distance metrics, improving tests and documentation (creating gh-docs using mkdocs), enhancing the metrics reporting and formatting, providing text-, Markdown-, and HTML-based reports.
+Interested students should contact me for additional requirements.
 </details>
 
 ***

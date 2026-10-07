@@ -50,6 +50,9 @@ Advanced (for students who want to learn more):
 * C++ & CUDA:
     * Introduction to CUDA: https://developer.nvidia.com/blog/even-easier-introduction-cuda
     * Optimizing preprocessing pipelines with C++ modules: https://medium.com/data-science/how-to-optimize-your-dl-data-input-pipeline-with-a-custom-pytorch-operator-7f8ea2da5206
+    * https://docs.pytorch.org/tutorials/advanced/cpp_custom_ops.html
+    * https://mlc.ai/modern-gpu-programming-for-mlsys/
+    * https://developer.nvidia.com/blog/kernel-fusion-in-nvidia-cuda-optimizing-memory-traffic-and-launch-overhead/
 * SAM Optimizer:
   * Sharpness-Aware Minimization for Efficiently Improving Generalization: https://arxiv.org/abs/2010.01412
 * Muon Optimizer:

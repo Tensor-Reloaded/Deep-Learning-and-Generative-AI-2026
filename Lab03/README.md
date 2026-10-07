@@ -11,6 +11,7 @@ Lab Notebook
 Bonus points will be awarded for an open-source Python library published on PyPI that implements unweighted and sample-weighted F1 score kernels in C++ using the PyTorch Tensor API. 
 It must support CPU and CUDA tensors, provide wheels for common platforms, and fall back to compilation during <code>pip install</code> when no compatible wheel is available. 
 Custom CUDA kernels are not required.
+Interested students should contact me for all requirements.
 </details>
 
 ***

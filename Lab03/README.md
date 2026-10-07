@@ -55,6 +55,7 @@ Advanced (for students who want to learn more):
 * Muon Optimizer:
   * PyTorch implementation: https://docs.pytorch.org/docs/stable/generated/torch.optim.Muon.html
   * Muon is Scalable for LLM Training: https://arxiv.org/pdf/2502.16982
+  * SOAP, Muon, and Beyond: https://arxiv.org/pdf/2607.20548
   * Use the Muon implementation from timm if you have >2D weight matrices in your network.
 * Parallelism tutorials:
   * https://docs.pytorch.org/tutorials/intermediate/ddp_tutorial.html

@@ -1,5 +1,7 @@
 ## Lab 1
 
+Local companion: [Course 1 recap notebook](./LocalRecap.ipynb) ([HTML](./LocalRecap.html)), covering shapes, autograd, a small training loop, and convolution shapes on CPU. See [setup notes](../SETUP.md) before running the upstream GPU examples.
+
 ***
 Check the https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/foundations/roadmap.md#interested-learners.
 

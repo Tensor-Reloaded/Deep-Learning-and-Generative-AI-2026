@@ -10,6 +10,8 @@ Repository for the Deep Learning and Generative AI laboratory, "Alexandru Ioan C
 
 ## Environment setup
 
+Start with the [2026 local setup](./SETUP.md) and run the included offline CPU smoke check. A [seminar preparation map](./PREPARATION.md) records prerequisites and architecture-demo ideas.
+
 1. [AI-Learning-Hub/how_to/install_pytorch](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/how_to/install_pytorch.md)
 2. [AI-Learning-Hub/how_to/use_google_colab](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/how_to/use_google_colab.md)
 3. [AI-Learning-Hub/how_to/use_kaggle](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/how_to/use_kaggle.md)

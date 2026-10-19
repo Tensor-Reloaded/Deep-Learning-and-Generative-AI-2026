@@ -1,5 +1,7 @@
 # Seminar preparation map
 
+**Ready for S4 (19–20 October): [MobileNet lesson pack](Seminars/S04_MobileNet/00_START.md).** Core V1, width/resolution and latency, followed by a V2 introduction. Includes formative exercises, with no additional graded assignment.
+
 This is a preparation checklist for the 2026 course. It does not replace the published Lab 1 or create assignments. Topic placement after Lab 1 is based on the teaching team's planning and may change.
 
 | Topic | Students should be able to explain | Useful demonstration |

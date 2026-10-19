@@ -27,5 +27,9 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 ## Table of contents
 * [Lab01](./Lab01): Intro, Advanced Tensor Operations, PyTorch Recap (Homework 1: Multi Layer Perceptron + Backpropagation)
 
+## Seminar companions
+
+* [S4 — MobileNet](./Seminars/S04_MobileNet/00_START.md): executed notebook, interactive cost/shape demonstrations, and HTML fallback. Seminar block numbering is separate from the repository's Lab numbering.
+
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

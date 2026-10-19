@@ -11,7 +11,7 @@ md('''# S4 · MobileNet: spend computation where it matters
 ## Goal
 Explain spatial filtering versus channel mixing, calculate convolution costs, implement a MobileNetV1 block, and recognize the MobileNetV2 inverted residual.
 
-**CARN / DL · 19–20 October 2026.** Classroom companion; no additional graded homework. Core: V1; V2 is the bridge to next week's EfficientNet.
+**CARN / DL · 19–20 October 2026.** Classroom companion; no additional graded homework. Core: V1; V2 connects to EfficientNet in part 2 of this same session.
 
 ## Setup
 Use the course `.venv` (Python + PyTorch + Matplotlib). CPU only, fixed seed, synthetic inputs; no downloads or pretrained weights. Saved outputs let you present without executing. Shapes use **N,C,H,W**.
@@ -272,7 +272,7 @@ md('''## Checks
 5. Can every full convolution be represented by multiplier-1 DW→PW without changing the function?
 
 ## Next Steps
-EfficientNet builds on efficient blocks and model scaling; its full treatment belongs to S5. No new assignment or deadline is introduced here.
+Continue today with [03_EfficientNet.ipynb](03_EfficientNet.ipynb). Use [04_Papers.md](04_Papers.md) for direct arXiv PDFs. Next seminar: Object Detection; S6 is reserved for RL or SSL. No new assignment or deadline is introduced here.
 
 Primary sources: [MobileNetV1](https://arxiv.org/abs/1704.04861), [MobileNetV2](https://arxiv.org/abs/1801.04381), [PyTorch Conv2d](https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html), [torchvision MobileNetV2](https://docs.pytorch.org/vision/stable/models/mobilenetv2.html).
 ''')

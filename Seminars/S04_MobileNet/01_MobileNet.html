@@ -7803,7 +7803,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="S4-%C2%B7-MobileNet:-spend-computation-where-it-matters">S4 · MobileNet: spend computation where it matters<a class="anchor-link" href="#S4-%C2%B7-MobileNet:-spend-computation-where-it-matters">¶</a></h1><h2 id="Goal">Goal<a class="anchor-link" href="#Goal">¶</a></h2><p>Explain spatial filtering versus channel mixing, calculate convolution costs, implement a MobileNetV1 block, and recognize the MobileNetV2 inverted residual.</p>
-<p><strong>CARN / DL · 19–20 October 2026.</strong> Classroom companion; no additional graded homework. Core: V1; V2 is the bridge to next week's EfficientNet.</p>
+<p><strong>CARN / DL · 19–20 October 2026.</strong> Classroom companion; no additional graded homework. Core: V1; V2 connects to EfficientNet in part 2 of this same session.</p>
 <h2 id="Setup">Setup<a class="anchor-link" href="#Setup">¶</a></h2><p>Use the course <code>.venv</code> (Python + PyTorch + Matplotlib). CPU only, fixed seed, synthetic inputs; no downloads or pretrained weights. Saved outputs let you present without executing. Shapes use <strong>N,C,H,W</strong>.</p>
 </div>
 </div>
@@ -8242,17 +8242,16 @@ For a fixed input channel, every output uses a scaled copy of the same spatial f
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Standard: median 97.0 µs; IQR 20.7 µs; 28 timing blocks
-  High variability (IQR &gt; 10% of median): treat this run as illustrative, not a reliable speed estimate.
+<pre>Standard: median 84.7 µs; IQR 3.6 µs; 4 timing blocks
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Depthwise + pointwise: median 72.5 µs; IQR 3.9 µs; 5 timing blocks
+<pre>Depthwise + pointwise: median 68.1 µs; IQR 0.2 µs; 5 timing blocks
 Arithmetic ratio: 7.89×
-Measured latency ratio on this run: 1.34×
+Measured latency ratio on this run: 1.24×
 </pre>
 </div>
 </div>
@@ -8437,7 +8436,7 @@ InvertedResidual(
 <li>Does 8× fewer MACs guarantee 8× lower latency?</li>
 <li>Can every full convolution be represented by multiplier-1 DW→PW without changing the function?</li>
 </ol>
-<h2 id="Next-Steps">Next Steps<a class="anchor-link" href="#Next-Steps">¶</a></h2><p>EfficientNet builds on efficient blocks and model scaling; its full treatment belongs to S5. No new assignment or deadline is introduced here.</p>
+<h2 id="Next-Steps">Next Steps<a class="anchor-link" href="#Next-Steps">¶</a></h2><p>Continue today with <a href="03_EfficientNet.ipynb">03_EfficientNet.ipynb</a>. Use <a href="04_Papers.md">04_Papers.md</a> for direct arXiv PDFs. Next seminar: Object Detection; S6 is reserved for RL or SSL. No new assignment or deadline is introduced here.</p>
 <p>Primary sources: <a href="https://arxiv.org/abs/1704.04861">MobileNetV1</a>, <a href="https://arxiv.org/abs/1801.04381">MobileNetV2</a>, <a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.Conv2d.html">PyTorch Conv2d</a>, <a href="https://docs.pytorch.org/vision/stable/models/mobilenetv2.html">torchvision MobileNetV2</a>.</p>
 </div>
 </div>

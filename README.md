@@ -29,7 +29,7 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 
 ## Seminar companions
 
-* [S4 — MobileNet](./Seminars/S04_MobileNet/00_START.md): executed notebook, interactive cost/shape demonstrations, and HTML fallback. Seminar block numbering is separate from the repository's Lab numbering.
+* [S4 — MobileNet + EfficientNet](./Seminars/S04_MobileNet/00_START.md): executed notebooks, interactive cost/shape demonstrations, HTML fallbacks and an arXiv/PDF projector index. Seminar block numbering is separate from the repository's Lab numbering.
 
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

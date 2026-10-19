@@ -1,6 +1,6 @@
 # Seminar preparation map
 
-**Ready for S4 (19–20 October): [MobileNet lesson pack](Seminars/S04_MobileNet/00_START.md).** MobileNet V1/V2 plus SE, EfficientNet scaling and EfficientNetV2 today. Object Detection moves to S5; S6 is reserved for RL or SSL, choice pending. Includes formative exercises, with no additional graded assignment.
+**Ready for S4 (19–20 October): [MobileNet lesson pack](Lab04/00_START.md).** MobileNet V1/V2 plus SE, EfficientNet scaling and EfficientNetV2 today. Object Detection moves to S5; S6 is reserved for RL or SSL, choice pending. Includes formative exercises, with no additional graded assignment.
 
 This is a preparation checklist for the 2026 course. It does not replace the published Lab 1 or create assignments. Topic placement after Lab 1 is based on the teaching team's planning and may change.
 

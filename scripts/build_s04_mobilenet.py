@@ -2,7 +2,7 @@ from pathlib import Path
 import nbformat as nbf
 from textwrap import dedent
 root=Path(__file__).resolve().parents[1]
-out=root/'Seminars/S04_MobileNet'
+out=root/'Lab04'
 out.mkdir(parents=True, exist_ok=True)
 cells=[]
 def md(s): cells.append(nbf.v4.new_markdown_cell(dedent(s).strip()))

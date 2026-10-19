@@ -35,8 +35,8 @@ Skip MobileNet §5 and §9 if time is tight. The original EfficientNet paper is 
 
 ## Run code online, if needed
 
-- [Open MobileNet in Colab](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Seminars/S04_MobileNet/01_MobileNet.ipynb)
-- [Open EfficientNet in Colab](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Seminars/S04_MobileNet/03_EfficientNet.ipynb)
+- [Open MobileNet in Colab](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Lab04/01_MobileNet.ipynb)
+- [Open EfficientNet in Colab](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Lab04/03_EfficientNet.ipynb)
 
 Use a CPU runtime. The notebooks were executed in the course environment; Colab execution itself has not been verified. Inputs are synthetic and models untrained; no datasets or weights need downloading. No new graded task or deadline.
 
@@ -44,4 +44,4 @@ Use a CPU runtime. The notebooks were executed in the course environment; Colab 
 
 The `.html` files in this folder are downloadable exports/playground sources. GitHub's file viewer does not run their JavaScript. They are **not required for the online presentation route above**; the notebook outputs supply the diagrams and worked demonstrations.
 
-For local regeneration only, see [SETUP.md](../../SETUP.md) and `scripts/execute_s04_mobilenet.py`. The execution script runs both notebooks and exports HTML. The MobileNet builder overwrites edits and clears outputs; use only for source regeneration.
+For local regeneration only, see [SETUP.md](../SETUP.md) and `scripts/execute_s04_mobilenet.py`. The execution script runs both notebooks and exports HTML. The MobileNet builder overwrites edits and clears outputs; use only for source regeneration.

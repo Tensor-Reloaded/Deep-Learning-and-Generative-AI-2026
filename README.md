@@ -5,13 +5,13 @@
 Repository for the Deep Learning and Generative AI laboratory, "Alexandru Ioan Cuza" University, Faculty of Computer Science, Master degree.
 
 
-## Start here for S4: MobileNet + EfficientNet
+## Lab04: MobileNet + EfficientNet
 
-**[Open the presentation guide](Seminars/S04_MobileNet/00_START.md)** — ordered links to Google Slides, rendered notebooks and arXiv papers. Everything in the main presentation route opens online from this repository.
+**[Open the presentation guide](Lab04/00_START.md)** — ordered links to Google Slides, rendered notebooks and arXiv papers. Everything in the main presentation route opens online from this repository.
 
 - [Slides: Advanced CV Architectures, start at slide 26](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g239cc5d2af6_1_10)
-- [MobileNet notebook](Seminars/S04_MobileNet/01_MobileNet.ipynb) → [EfficientNet notebook](Seminars/S04_MobileNet/03_EfficientNet.ipynb)
-- [Papers: arXiv links, direct PDFs and figures to project](Seminars/S04_MobileNet/04_Papers.md)
+- [MobileNet notebook](Lab04/01_MobileNet.ipynb) → [EfficientNet notebook](Lab04/03_EfficientNet.ipynb)
+- [Papers: arXiv links, direct PDFs and figures to project](Lab04/04_Papers.md)
 
 ### Companion repository: [AI-Learning-Hub](https://github.com/Tensor-Reloaded/AI-Learning-Hub)
 
@@ -36,10 +36,7 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 * [Lab01](./Lab01): Intro, Advanced Tensor Operations, PyTorch Recap (Homework 1: Multi Layer Perceptron + Backpropagation)
 * [Lab02](./Lab02): Efficient Training and Inference, Test Time Augmentation
 * [Lab03](./Lab03): Cpp Modules, Distributed Data Parallel, SAM Optimizer, Muon Optimizer, Tensorboard, Weights and biases, AlexNet, ResNet, Batch Normalization (Homework 2: Training VGG-13)
-
-## Seminar companions
-
-* [S4 — MobileNet + EfficientNet](./Seminars/S04_MobileNet/00_START.md): executed notebooks, interactive cost/shape demonstrations, HTML fallbacks and an arXiv/PDF projector index. Seminar block numbering is separate from the repository's Lab numbering.
+* [Lab04](./Lab04): MobileNet + EfficientNet — [presentation guide](./Lab04/00_START.md), notebooks and [arXiv papers](./Lab04/04_Papers.md).
 
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

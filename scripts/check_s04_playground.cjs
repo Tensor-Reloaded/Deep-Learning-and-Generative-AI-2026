@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
-const html=fs.readFileSync(path.join(__dirname,'../Seminars/S04_MobileNet/02_Playground.html'),'utf8');
+const html=fs.readFileSync(path.join(__dirname,'../Lab04/02_Playground.html'),'utf8');
 let defaults={cin:'3',cout:'8',height:'5',width:'5',kernel:'3',alpha:'1',rho:'1',v2in:'16',v2out:'24',stride:'2'};
 const els={}; for(const m of html.matchAll(/id="([^"]+)"/g))els[m[1]]={value:defaults[m[1]]||'',textContent:'',innerHTML:'',hidden:false,style:{},classList:{toggle(){}},checkValidity(){let n=+this.value;return Number.isInteger(n)&&n>0&&n<=2048}};
 const ctx={document:{getElementById:id=>els[id]}};vm.createContext(ctx);vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],ctx);

@@ -10,7 +10,7 @@ from nbclient import NotebookClient
 from nbconvert import HTMLExporter
 
 root = Path(__file__).resolve().parents[1]
-lesson = root / 'Seminars' / 'S04_MobileNet'
+lesson = root / 'Lab04'
 for stem in ['01_MobileNet', '03_EfficientNet']:
     path = lesson / f'{stem}.ipynb'
     notebook = nbformat.read(path, as_version=4)

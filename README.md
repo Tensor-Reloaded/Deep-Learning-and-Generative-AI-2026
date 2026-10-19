@@ -5,6 +5,14 @@
 Repository for the Deep Learning and Generative AI laboratory, "Alexandru Ioan Cuza" University, Faculty of Computer Science, Master degree.
 
 
+## Start here for S4: MobileNet + EfficientNet
+
+**[Open the presentation guide](Seminars/S04_MobileNet/00_START.md)** — ordered links to Google Slides, rendered notebooks and arXiv papers. Everything in the main presentation route opens online from this repository.
+
+- [Slides: Advanced CV Architectures, start at slide 26](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g239cc5d2af6_1_10)
+- [MobileNet notebook](Seminars/S04_MobileNet/01_MobileNet.ipynb) → [EfficientNet notebook](Seminars/S04_MobileNet/03_EfficientNet.ipynb)
+- [Papers: arXiv links, direct PDFs and figures to project](Seminars/S04_MobileNet/04_Papers.md)
+
 ### Companion repository: [AI-Learning-Hub](https://github.com/Tensor-Reloaded/AI-Learning-Hub)
 
 

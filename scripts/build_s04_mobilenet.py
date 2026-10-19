@@ -14,7 +14,7 @@ Explain spatial filtering versus channel mixing, calculate convolution costs, im
 **CARN / DL · 19–20 October 2026.** Classroom companion; no additional graded homework. Core: V1; V2 connects to EfficientNet in part 2 of this same session.
 
 ## Setup
-Use the course `.venv` (Python + PyTorch + Matplotlib). CPU only, fixed seed, synthetic inputs; no downloads or pretrained weights. Saved outputs let you present without executing. Shapes use **N,C,H,W**.
+Read the saved outputs on GitHub, or execute in Colab / the course Python environment (PyTorch + Matplotlib). CPU only, fixed seed, synthetic inputs; no downloads or pretrained weights. Saved outputs let you present without executing. Shapes use **N,C,H,W**.
 ''')
 code(r'''import platform, time
 from pathlib import Path
@@ -110,7 +110,7 @@ md('''### 3 · Your turn: count before coding (6 minutes)
 3. What fraction of separable weights belongs to pointwise convolution?
 4. If output resolution is halved in both dimensions, do parameter counts change?
 
-Use [02_Playground.html](02_Playground.html) **after** students give their predictions. Select the 32→64 preset.
+After students give their predictions, compare with the implementation and saved output in §4. [Presentation and paper links](00_START.md) open online from GitHub.
 ''')
 md('''### 4 · Implement one V1 block
 `groups=Cin` and `out_channels=Cin` give one spatial filter per input channel. `kernel_size=1` mixes channels. BatchNorm and ReLU follow **both** convolutions.

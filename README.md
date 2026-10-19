@@ -26,6 +26,8 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 
 ## Table of contents
 * [Lab01](./Lab01): Intro, Advanced Tensor Operations, PyTorch Recap (Homework 1: Multi Layer Perceptron + Backpropagation)
+* [Lab02](./Lab02): Efficient Training and Inference, Test Time Augmentation
+* [Lab03](./Lab03): Cpp Modules, Distributed Data Parallel, SAM Optimizer, Muon Optimizer, Tensorboard, Weights and biases, AlexNet, ResNet, Batch Normalization (Homework 2: Training VGG-13)
 
 ## Seminar companions
 

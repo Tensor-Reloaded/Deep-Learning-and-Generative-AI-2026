@@ -5,20 +5,12 @@
 Repository for the Deep Learning and Generative AI laboratory, "Alexandru Ioan Cuza" University, Faculty of Computer Science, Master degree.
 
 
-## Lab04: MobileNet + EfficientNet
-
-**[Open the presentation guide](Lab04/00_START.md)** — ordered links to Google Slides, rendered notebooks and arXiv papers. Everything in the main presentation route opens online from this repository.
-
-- [Slides: Advanced CV Architectures, start at slide 26](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g239cc5d2af6_1_10)
-- [MobileNet notebook](Lab04/01_MobileNet.ipynb) → [EfficientNet notebook](Lab04/03_EfficientNet.ipynb)
-- [Papers: arXiv links, direct PDFs and figures to project](Lab04/04_Papers.md)
-
 ### Companion repository: [AI-Learning-Hub](https://github.com/Tensor-Reloaded/AI-Learning-Hub)
 
 
 ## Environment setup
 
-Start with the [2026 local setup](./SETUP.md) and run the included offline CPU smoke check. A [seminar preparation map](./PREPARATION.md) records prerequisites and architecture-demo ideas.
+Start with the [2026 local setup](./SETUP.md) and run the included offline CPU smoke check.
 
 1. [AI-Learning-Hub/how_to/install_pytorch](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/how_to/install_pytorch.md)
 2. [AI-Learning-Hub/how_to/use_google_colab](https://github.com/Tensor-Reloaded/AI-Learning-Hub/blob/main/how_to/use_google_colab.md)
@@ -36,7 +28,7 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 * [Lab01](./Lab01): Intro, Advanced Tensor Operations, PyTorch Recap (Homework 1: Multi Layer Perceptron + Backpropagation)
 * [Lab02](./Lab02): Efficient Training and Inference, Test Time Augmentation
 * [Lab03](./Lab03): Cpp Modules, Distributed Data Parallel, SAM Optimizer, Muon Optimizer, Tensorboard, Weights and biases, AlexNet, ResNet, Batch Normalization (Homework 2: Training VGG-13)
-* [Lab04](./Lab04): MobileNet + EfficientNet — [presentation guide](./Lab04/00_START.md), notebooks and [arXiv papers](./Lab04/04_Papers.md).
+* [Lab04](./Lab04): MobileNet, Squeeze-and-Excitation, EfficientNet — slides and papers.
 
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

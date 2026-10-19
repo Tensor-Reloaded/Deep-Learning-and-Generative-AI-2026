@@ -38,4 +38,4 @@ The upstream beginner and advanced tensor notebooks contain explicit CUDA calls,
 
 Published Course 1 covers neurons, activations, losses, gradients/backpropagation, convolutions, and a PyTorch recap. Course material being available does not establish that every slide has already been taught.
 
-See [PREPARATION.md](PREPARATION.md) for a topic checklist. Use the course page and Lab 1 for assessment rules; no new deadlines are introduced here.
+See [Lab04](Lab04/README.md) for MobileNet/EfficientNet slides and papers. Use the course page and Lab 1 for assessment rules; no new deadlines are introduced here.

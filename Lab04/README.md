@@ -1,33 +1,49 @@
-## Lab 4 — MobileNet and EfficientNet
+## Lab 4 — Advanced CV Architectures
+
+CNN history, AlexNet, VGG, Inception/GoogLeNet, ResNet, global average pooling, MobileNet, Squeeze-and-Excitation, EfficientNetV2 and RegNet.
 
 ### Slides
 
-[Advanced CV Architectures — ML@B / Berkeley Deep Learning](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g239cc5d2af6_1_10)
+**[Open the complete presentation from slide 1 — Advanced CV Architectures, ML@B / Berkeley Deep Learning](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.p)**
 
-- Slides 27–31: MobileNet.
-- Slides 33–34: Squeeze-and-Excitation.
-- Slides 35–38: EfficientNetV2. For the original EfficientNet and compound scaling, see the 2019 paper below.
+[Alternative shared copy](https://docs.google.com/presentation/d/1khoyPFJStL3nJAqiqCLTZ1cvvjiq_62ifgIaywVESl0/edit)
 
-[Alternative shared copy of the presentation](https://docs.google.com/presentation/d/1khoyPFJStL3nJAqiqCLTZ1cvvjiq_62ifgIaywVESl0/edit)
+### Slide-by-slide reading map
 
-***
+The table follows all **43 slides** in the instructor copy. Click a slide range to jump to its first slide. Paper links use arXiv where available; AlexNet links to the original NeurIPS proceedings and the historical LeNet reference to the authors' site. PDF page numbers count from 1.
 
-### Papers
+| Slides | Topic | Papers / direct PDFs | What to look at |
+|---|---|---|---|
+| [1–3](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.p) | Introduction and outline | — | Title, original announcements and outline. |
+| [4–7](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_15) | CNN history and structure | [LeCun et al.: Gradient Based Learning Applied to Document Recognition](https://bottou.org/papers/lecun-98h) · [PDF](https://leon.bottou.org/publications/pdf/ieee-1998.pdf) | Historical background; convolution, pooling and classification. |
+| [8](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g214454ff6ef_0_85) | Models | — | Section divider. |
+| [9–11](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_26) | AlexNet (2012) | [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) · [PDF](https://papers.nips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) | Convolutional versus fully connected layers; architecture and parameter budget. |
+| [12–15](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_45) | VGG (2014) | [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556) · [PDF](https://arxiv.org/pdf/1409.1556) | Repeated 3×3 convolutions; paper Table 1 compares configurations. |
+| [16](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_65) | Inception / GoogLeNet (2014) | [Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842) · [PDF](https://arxiv.org/pdf/1409.4842) | Parallel branches; [Figure 2, PDF p.5](https://arxiv.org/pdf/1409.4842#page=5) compares naive and bottleneck modules. |
+| [17–18](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_78) | Pointwise (1×1) convolutions | [Network In Network](https://arxiv.org/abs/1312.4400) · [PDF](https://arxiv.org/pdf/1312.4400)<br>[Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842) · [PDF](https://arxiv.org/pdf/1409.4842) | Channel mixing and dimensionality reduction; the following activation supplies nonlinearity. |
+| [19](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_97) | Inception: multi-scale features and auxiliary classifiers | [Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842) · [PDF](https://arxiv.org/pdf/1409.4842)<br>Later Inception-v3: [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/abs/1512.00567) · [PDF](https://arxiv.org/pdf/1512.00567) | Original Inception design and auxiliary losses. Inception-v3 is a related extension, also referenced in the comparison on slide 32. |
+| [20–22](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_103) | ResNet (2015) | [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) · [PDF](https://arxiv.org/pdf/1512.03385) | Identity and residual learning; [Figure 2, PDF p.2](https://arxiv.org/pdf/1512.03385#page=2) shows the residual block. |
+| [23](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_109) | ResNet: optimization, skip connections and BatchNorm | [Visualizing the Loss Landscape of Neural Nets](https://arxiv.org/abs/1712.09913) · [PDF](https://arxiv.org/pdf/1712.09913)<br>[Batch Normalization](https://arxiv.org/abs/1502.03167) · [PDF](https://arxiv.org/pdf/1502.03167) | Related papers for the loss-surface illustration and normalization discussion. |
+| [24–25](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_127) | Global average pooling and class activation maps | [Network In Network](https://arxiv.org/abs/1312.4400) · [PDF](https://arxiv.org/pdf/1312.4400)<br>[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150) · [PDF](https://arxiv.org/pdf/1512.04150) | Spatial averaging; linear classifier weights combine feature maps into class activation maps. |
+| [26](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g239cc5d2af6_1_10) | From ResNet to efficient models | — | Transition: faster, smaller models. |
+| [27–32](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g229ce143592_0_133) | MobileNetV1 (2017) | [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861) · [PDF](https://arxiv.org/pdf/1704.04861) | [Figure 2, PDF p.3](https://arxiv.org/pdf/1704.04861#page=3): depthwise + pointwise; §3.1: cost. Slide 30: 216 versus 51 weights; slide 32: Inception-v3 comparison. |
+| [33–34](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g214454ff6ef_0_9) | Squeeze-and-Excitation | [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507) · [PDF](https://arxiv.org/pdf/1709.01507) | [Figure 1, PDF p.2](https://arxiv.org/pdf/1709.01507v4#page=2): squeeze, excitation and channel gates. |
+| [35–38](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g214454ff6ef_0_0) | EfficientNetV2; MBConv / Fused-MBConv; architecture search | [EfficientNetV2: Smaller Models and Faster Training](https://arxiv.org/abs/2104.00298) · [PDF](https://arxiv.org/pdf/2104.00298)<br>Baseline/scaling background: [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) · [PDF](https://arxiv.org/pdf/1905.11946)<br>MBConv background: [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381) · [PDF](https://arxiv.org/pdf/1801.04381) | V2 [Figure 2 / Table 3, PDF p.3](https://arxiv.org/pdf/2104.00298v3#page=3). Original EfficientNet: [Figure 2, p.2](https://arxiv.org/pdf/1905.11946v5#page=2), [equation 3, p.4](https://arxiv.org/pdf/1905.11946v5#page=4), [Table 1, p.5](https://arxiv.org/pdf/1905.11946v5#page=5). MobileNetV2 and original EfficientNet are supporting readings here, not separate slide sections. |
+| [39–41](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g214454ff6ef_0_75) | Takeaways, design spaces and building blocks | [RegNet: Designing Network Design Spaces](https://arxiv.org/abs/2003.13678) · [PDF](https://arxiv.org/pdf/2003.13678) | RegNet is explicitly referenced on slide 40; slide 41 recaps the architectural building blocks. |
+| [42–43](https://docs.google.com/presentation/d/1CC_V5M96L_mL8SM5QTSosanvxInGQk0xGMfn9tNbQZQ/edit#slide=id.g284de9935d5_1_10) | Original attendance slide and contributors | — | Original deck closing material and ML@B credits. |
 
-| Topic | Paper on arXiv | PDF / useful figures |
-|---|---|---|
-| MobileNetV1 | [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861) | [PDF, page 3](https://arxiv.org/pdf/1704.04861#page=3) — Figure 2: depthwise + pointwise; §3.1: computational cost. |
-| MobileNetV2 | [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381) | [PDF, page 3](https://arxiv.org/pdf/1801.04381#page=3) — Figure 3: residual versus inverted residual. |
-| Squeeze-and-Excitation | [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507) | [PDF, page 2](https://arxiv.org/pdf/1709.01507v4#page=2) — Figure 1: SE block. |
-| EfficientNet | [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) | [Figure 2, page 2](https://arxiv.org/pdf/1905.11946v5#page=2): scaling; [equation 3, page 4](https://arxiv.org/pdf/1905.11946v5#page=4); [Table 1, page 5](https://arxiv.org/pdf/1905.11946v5#page=5): B0 architecture. |
-| EfficientNetV2 | [EfficientNetV2: Smaller Models and Faster Training](https://arxiv.org/abs/2104.00298) | [PDF, page 3](https://arxiv.org/pdf/2104.00298v3#page=3) — Figure 2 and Table 3: MBConv / Fused-MBConv; §4: progressive learning. |
+### Presentation notes
 
-***
+- **Skipped slides:** the instructor copy currently marks **11, 15 and 33–38** as skipped. To show the entire deck in slideshow mode, select these slides and clear **Skip slide** in Google Slides. The numbering above includes them.
+- **VGG (slide 13):** VGG16 has 13 convolutional + 3 fully connected layers; VGG19 has 16 + 3. The slide's “23 convolutional layers” is incorrect.
+- **ResNet / GAP (20–25):** distinguish the optimization/degradation problem from vanishing gradients alone. A standard ResNet averages feature channels and then applies a learned classifier; its channels need not correspond one-to-one to classes.
+- **MobileNet (31–32):** V1 uses a standard stem followed by depthwise-separable blocks. Arithmetic reductions do not guarantee a universal 10× latency gain; use the paper's task-specific comparisons.
+- **EfficientNet (35–38):** these slides cover V2. Original EfficientNet already uses architecture search for its baseline plus compound scaling. An identity skip requires stride 1 and matching input/output channels.
+- Slide 2's homework announcement and slide 42's attendance instructions belong to the original ML@B course.
 
-### Further reading
+### Additional related papers
 
-- [ResNet](https://arxiv.org/abs/1512.03385) · [PDF](https://arxiv.org/pdf/1512.03385)
-- [Batch Normalization](https://arxiv.org/abs/1502.03167) · [PDF](https://arxiv.org/pdf/1502.03167)
-- [Searching for Activation Functions (Swish)](https://arxiv.org/abs/1710.05941) · [PDF](https://arxiv.org/pdf/1710.05941)
-- [MnasNet](https://arxiv.org/abs/1807.11626) · [PDF](https://arxiv.org/pdf/1807.11626)
-- [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244) · [PDF](https://arxiv.org/pdf/1905.02244)
+- [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027) · [PDF](https://arxiv.org/pdf/1603.05027) — pre-activation residual units.
+- [MnasNet](https://arxiv.org/abs/1807.11626) · [PDF](https://arxiv.org/pdf/1807.11626) — architecture-search background.
+- [Searching for Activation Functions (Swish)](https://arxiv.org/abs/1710.05941) · [PDF](https://arxiv.org/pdf/1710.05941).
+- [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244) · [PDF](https://arxiv.org/pdf/1905.02244) — later MobileNet development; no dedicated section in this deck.

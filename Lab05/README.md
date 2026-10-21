@@ -1,4 +1,14 @@
-## Lab 5 — Object Detection
+## Lab 5
+
+---
+
+Homework 3: https://www.kaggle.com/t/38b93f788de44b69a3d7d2a754b500a4
+
+---
+
+### Object Detection
+
+
 
 Classification and localization, bounding boxes, IoU, R-CNN, Fast R-CNN, Faster R-CNN, YOLO, non-maximum suppression and anchor boxes.
 
@@ -36,3 +46,21 @@ The deck combines an introductory YOLO explanation with later anchor-based conve
 - **Slides 10–11:** IoU measures overlap; the original YOLOv1 training objective uses a weighted sum-squared-error formulation, not simply `1 − IoU`.
 
 Slide 2's quizzes/homework and slide 34's attendance instructions belong to the original ML@B course.
+
+---
+
+***
+For self-study (all students):
+* https://paperswithcode.co/
+* https://d2l.ai/chapter_computer-vision/rcnn.html
+* R-CNN vs Fast R-CNN vs Faster R-CNN vs YOLO: https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e
+
+---
+
+Advanced (for students who want to learn more):
+* R-CNN: https://arxiv.org/abs/1311.2524v5
+* Faster R-CNN: https://arxiv.org/pdf/1506.01497.pdf
+* YOLO: https://arxiv.org/abs/1506.02640
+* U-Net: https://arxiv.org/abs/1505.04597
+* 3D U-Net: https://arxiv.org/abs/1606.06650
+* Model Soup: https://arxiv.org/abs/2203.05482

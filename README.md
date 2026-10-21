@@ -28,8 +28,8 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 * [Lab01](./Lab01): Intro, Advanced Tensor Operations, PyTorch Recap (Homework 1: Multi Layer Perceptron + Backpropagation)
 * [Lab02](./Lab02): Efficient Training and Inference, Test Time Augmentation
 * [Lab03](./Lab03): Cpp Modules, Distributed Data Parallel, SAM Optimizer, Muon Optimizer, Tensorboard, Weights and biases, AlexNet, ResNet, Batch Normalization (Homework 2: Training VGG-13)
-* [Lab04](./Lab04): Advanced CV Architectures — AlexNet, VGG, Inception, ResNet, MobileNet, Squeeze-and-Excitation, EfficientNetV2 and RegNet; complete slide map and papers.
-* [Lab05](./Lab05): Object Detection — localization, IoU, R-CNN, Fast/Faster R-CNN, YOLO, NMS and anchors; slides and papers.
+* [Lab04](./Lab04): Advanced CV Architectures: AlexNet, VGG, Inception, ResNet, MobileNet, Squeeze-and-Excitation, EfficientNetV2 and RegNet.
+* [Lab05](./Lab05): Object Detection: localization, IoU, R-CNN, Fast/Faster R-CNN, YOLO, NMS and anchors (Homework 3: Complex experiments on Noisy CIFAR-100).
 
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

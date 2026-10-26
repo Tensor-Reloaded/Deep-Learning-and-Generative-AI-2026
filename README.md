@@ -29,7 +29,7 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 * [Lab02](./Lab02): Efficient Training and Inference, Test Time Augmentation
 * [Lab03](./Lab03): Cpp Modules, Distributed Data Parallel, SAM Optimizer, Muon Optimizer, Tensorboard, Weights and biases, AlexNet, ResNet, Batch Normalization (Homework 2: Training VGG-13)
 * [Lab04](./Lab04): Advanced CV Architectures: AlexNet, VGG, Inception, ResNet, MobileNet, Squeeze-and-Excitation, EfficientNetV2 and RegNet.
-* [Lab05](./Lab05): Object Detection: localization, IoU, R-CNN, Fast/Faster R-CNN, YOLO, NMS and anchors (Homework 3: Complex experiments on Noisy CIFAR-100).
+* [Lab05](./Lab05): Object Detection: slides/papers and a 2-hour **[Fast R-CNN practical notebook (Colab)](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Lab05/ObjectDetection.ipynb)** (Homework 3: Complex experiments on Noisy CIFAR-100).
 
 
 ## [2025 archive](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025)

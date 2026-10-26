@@ -6,6 +6,32 @@ Homework 3: https://www.kaggle.com/t/38b93f788de44b69a3d7d2a754b500a4
 
 ---
 
+### Practical lab · Build and fine-tune a pedestrian detector (2 hours)
+
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Lab05/ObjectDetection.ipynb)
+
+**[Student notebook: ObjectDetection.ipynb](ObjectDetection.ipynb)** — save a copy in Drive, select a GPU runtime if available, then work through the seven TODO blocks in order. CPU is also supported. The notebook downloads the dataset and ImageNet weights automatically; no Kaggle token or Drive mount is needed.
+
+Following the Object Detection presentation, this session implements a **simplified Fast R-CNN-style detector** on Penn-Fudan pedestrians. The supplied **ResNet-18 is pretrained for ImageNet classification**, not object detection. You first train a new detection head on its frozen features, then **fine-tune `layer3` and the head together on detection images**. The second stage recomputes features and uses horizontal-flip augmentation.
+
+| Time | Your implementation | Supplied scaffolding |
+|---|---|---|
+| 0–10 min | Inspect the pipeline and data | Download, seeded train/validation/test split, pretrained backbone |
+| 10–25 min | Resize/normalize images and transform bounding boxes | Instance masks → boxes, visualization |
+| 25–40 min | Match proposals by IoU; assign foreground/background/ignore labels | Multi-scale geometric proposals and balanced region sampling |
+| 40–55 min | Shared MLP, classification branch and box-regression branch | RoI pooling on the shared feature map |
+| 55–70 min | Cross-entropy + positive-only Smooth L1; optimization step | Detection data and model interfaces |
+| 70–85 min | Write the epoch loop and train the head (experiment A) | Feature caching, decoding, NMS and validation evaluation |
+| 85–110 min | Implement end-to-end fine-tuning on full images (experiment B) | Augmentation and differential learning rates |
+| 110–120 min | Compare A/B on validation, test once, explain failures | Loss plots, matched-image comparisons and full detector checkpoint |
+
+**Deliverable:** your completed notebook with loss curves for both training stages, head-only versus fine-tuned predictions, held-out precision/recall and answers to the discussion questions. This is an **in-class exercise, separate from Homework 3** above.
+
+We use geometric region proposals and fine-tune only the last backbone block to fit the session. This preserves Fast R-CNN's shared-feature/RoI-pooling/two-head pipeline, but is not an exact reproduction: the original uses selective search and a different backbone/head. There is no RPN here; implementing one is an optional longer extension. Ground-truth boxes are used for training targets and evaluation, never to generate validation/test predictions.
+
+References: [Fast R-CNN paper](https://arxiv.org/abs/1504.08083) · [PDF](https://arxiv.org/pdf/1504.08083) · [ResNet paper](https://arxiv.org/abs/1512.03385) · [Penn-Fudan data](https://www.cis.upenn.edu/~jshi/ped_html/) · [RoI pooling documentation](https://docs.pytorch.org/vision/stable/generated/torchvision.ops.roi_pool.html).
+
 ### Object Detection
 
 

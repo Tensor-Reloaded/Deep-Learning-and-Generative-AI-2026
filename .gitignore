@@ -165,3 +165,7 @@ cython_debug/
 
 Lab06/sample_data/
 Lab06/checkpoints/
+
+# Lab05 downloaded data and student model checkpoints
+Lab05/data/
+Lab05/*.pt

@@ -8,3 +8,4 @@ jupyterlab>=4.3,<5
 nbclient>=0.10,<1
 nbconvert>=7.16,<8
 ipykernel>=6.29,<8
+tqdm>=4.66,<5

@@ -26,11 +26,26 @@ Following the Object Detection presentation, this session implements a **simplif
 | 85–110 min | Implement end-to-end fine-tuning on full images (experiment B) | Augmentation and differential learning rates |
 | 110–120 min | Compare A/B on validation, test once, explain failures | Loss plots, matched-image comparisons and full detector checkpoint |
 
-**Deliverable:** your completed notebook with loss curves for both training stages, head-only versus fine-tuned predictions, held-out precision/recall and answers to the discussion questions. This is an **in-class exercise, separate from Homework 3** above.
+**Deliverable:** your completed notebook with loss curves for both training stages, head-only versus fine-tuned predictions, held-out precision/recall/F1, a tuning table and answers to the discussion questions. This is an **in-class exercise, separate from Homework 3** above.
 
 We use geometric region proposals and fine-tune only the last backbone block to fit the session. This preserves Fast R-CNN's shared-feature/RoI-pooling/two-head pipeline, but is not an exact reproduction: the original uses selective search and a different backbone/head. There is no RPN here; implementing one is an optional longer extension. Ground-truth boxes are used for training targets and evaluation, never to generate validation/test predictions.
 
 References: [Fast R-CNN paper](https://arxiv.org/abs/1504.08083) · [PDF](https://arxiv.org/pdf/1504.08083) · [ResNet paper](https://arxiv.org/abs/1512.03385) · [Penn-Fudan data](https://www.cis.upenn.edu/~jshi/ped_html/) · [RoI pooling documentation](https://docs.pytorch.org/vision/stable/generated/torchvision.ops.roi_pool.html).
+
+### Performance targets · validation split
+
+Complete both training stages, then tune your training settings to reach these targets on the supplied **30-image validation split**:
+
+| Experiment | Required validation F1 | Stretch target |
+|---|---|---|
+| A · frozen ImageNet backbone, trained detection head | **≥ 0.60** | ≥ 0.68 |
+| B · fine-tuned layer3 + head | **≥ 0.70** | ≥ 0.75 |
+
+Use the provided evaluation protocol unchanged: **seed 2026**, 120/30/20 split, input 256×256, score threshold **0.7**, NMS IoU **0.3**, one-to-one matching at IoU **0.5**. F1 = 2TP / (2TP + FP + FN), computed over all validation detections; report precision, recall and TP/FP/FN too. These are fixed-threshold detection scores, **not mAP**.
+
+The starting hyperparameters are deliberately conservative. Try different epoch counts and learning rates for the new head and pretrained block; log at least two configurations and select on validation. More epochs need not help. Keep the data split, evaluation thresholds and provided model/data interfaces fixed for target comparisons. Do not use validation/test annotations to produce predictions or to train the model.
+
+These targets were calibrated with a completed instructor implementation on a Colab T4; small hardware/software differences are possible. They are learning goals, not automatic correctness tests. Evaluate the **20 test images once**, after choosing your final configuration; there is no test-score target. Include your configuration table and explain an unsuccessful experiment as well as the best one.
 
 ### Object Detection
 

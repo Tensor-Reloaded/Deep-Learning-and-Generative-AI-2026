@@ -31,7 +31,7 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 * [Lab04](./Lab04): Advanced CV Architectures: AlexNet, VGG, Inception, ResNet, MobileNet, Squeeze-and-Excitation, EfficientNetV2 and RegNet.
 * [Lab05](./Lab05): Object Detection: slides/papers and a 2-hour **[Fast R-CNN practical notebook (Colab)](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Lab05/ObjectDetection.ipynb)** (Homework 3: Complex experiments on Noisy CIFAR-100).
 
-* [Lab06](./Lab06): Reinforcement Learning: Q-learning and DQN, AlphaGo Zero / AlphaZero, MuZero and ReBeL; guided paper reading and board exercises.
+* [Lab06](./Lab06): Reinforcement Learning: Q-learning and DQN, AlphaGo Zero / AlphaZero, MuZero and ReBeL — papers and videos.
 
 
 

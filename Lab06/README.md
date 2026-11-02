@@ -2,27 +2,19 @@
 
 From learning action values to planning with a learned model: **Q-learning → DQN → AlphaGo Zero / AlphaZero → MuZero → ReBeL**.
 
-## Slides — open these first
+## Materials from previous editions
 
-Original **UC Berkeley CS W182/282A, Spring 2021**, Sergey Levine: [course website](https://cs182sp21.github.io/), [Lecture 15: Reinforcement Learning (PDF)](https://cs182sp21.github.io/static/slides/lec-15.pdf), [Lecture 16: Reinforcement Learning / Q-learning (PDF)](https://cs182sp21.github.io/static/slides/lec-16.pdf).
+The paper sequence below is preserved from [CARN Lab09 (2023)](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2023/tree/main/Lab09) and [CARN Lab07 (2025)](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025/tree/main/Lab07). Use the paper table as the presentation entry point. A separate historical RL slide deck has not yet been identified.
 
-All page numbers below are **1-based PDF viewer pages**, including title pages, not journal page numbers. Links jump to the first page of each range; if the browser ignores `#page=`, enter the page manually. The selected pages introduce the concepts; the second half of the seminar uses figures directly from the papers.
-
-| Topic | Slides to show | Focus |
-|---|---|---|
-| From prediction to decisions | [Lecture 15, pp. 2–7](https://cs182sp21.github.io/static/slides/lec-15.pdf#page=2) | Agent, state/observation, action, reward, transitions, policy; maximize long-term return rather than immediate reward. Briefly distinguish MDP from POMDP. |
-| Value and discounted return | [Lecture 16, p. 5](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=5), [p. 12](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=12) | What V(s) and Q(s,a) predict; what γ changes. |
-| Learning without knowing transitions | [Lecture 16, pp. 22–27](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=22) | Bellman targets, fitted Q iteration, online Q-learning and ε-greedy exploration. |
-| Making neural Q-learning work | [Lecture 16, pp. 28–37](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=28) | Correlated samples, replay buffer, moving targets, separate target network and Q-network outputs. |
-| Optional extension: policy gradients / actor–critic | [Lecture 15, pp. 11–21](https://cs182sp21.github.io/static/slides/lec-15.pdf#page=11), [Lecture 16, pp. 6–14](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=6) | Alternative route: optimize the policy directly and learn a value baseline. Outside the core two-hour sequence. |
+All page numbers below are **1-based PDF viewer pages**, including title pages, not journal page numbers. Links jump to the first page of each range; if the browser ignores `#page=`, enter the page manually.
 
 ## Two-hour presentation order
 
 | Minutes | Open | Activity / question |
 |---|---|---|
-| 0–15 | [Berkeley L15, pp. 2–7](https://cs182sp21.github.io/static/slides/lec-15.pdf#page=2) | A robot can take +1 now or a route to +10 later. Define state, action, transition, reward and policy. What if its battery level is missing from the state? |
-| 15–30 | [L16 p. 5](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=5), [p. 12](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=12), [pp. 22–27](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=22) | Q-learning and exploration. Do Exercise 1 below (5 minutes). |
-| 30–50 | [L16 pp. 28–37](https://cs182sp21.github.io/static/slides/lec-16.pdf#page=28), [DQN 2013 p. 5](https://arxiv.org/pdf/1312.5602#page=5), [DQN 2015 pp. 2 and 7](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf#page=2) | Replace the Q-table with a CNN. Trace one replay minibatch; contrast the 2013 algorithm with the 2015 target-network version. Why stack frames? |
+| 0–15 | Board: agent–environment loop; [DQN 2013, pp. 2–3](https://arxiv.org/pdf/1312.5602#page=2) | A robot can take +1 now or a route to +10 later. Define state, action, transition, reward and policy. What if its battery level is missing from the state? |
+| 15–30 | Board: Q-learning update below; [DQN 2013, p. 3](https://arxiv.org/pdf/1312.5602#page=3) | Q-learning and exploration. Do Exercise 1 below (5 minutes). |
+| 30–50 | [DQN 2013 p. 5](https://arxiv.org/pdf/1312.5602#page=5), [DQN 2015 pp. 2 and 7](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf#page=2) | Replace the Q-table with a CNN. Trace one replay minibatch; contrast the 2013 algorithm with the 2015 target-network version. Why stack frames? |
 | 50–80 | [AlphaGo Zero p. 2](https://augmentingcognition.com/assets/Silver2017a.pdf#page=2), [AlphaZero pp. 3–4](https://arxiv.org/pdf/1712.01815#page=3) | Follow self-play → MCTS visit counts → policy/value training → better search. Do Exercise 2 (5 minutes). Explain what generalizes from Go to chess and shogi. |
 | 80–105 | [MuZero pp. 3–5](https://arxiv.org/pdf/1911.08265#page=3) | Trace representation h, dynamics g, prediction f through Figure 1. Identify reward/value/policy targets. Does the model need to reconstruct pixels? |
 | 105–115 | [ReBeL pp. 1–2](https://arxiv.org/pdf/2007.13544#page=1) | Use Figure 1's modified rock–paper–scissors to show why hidden information changes search. Introduce public belief states; leave CFR details for further reading. |
@@ -82,7 +74,7 @@ $$\ell = (z-v)^2 - \sum_a \pi_a \log p_a + c\lVert\theta\rVert^2$$
 
 ## Further viewing and source history
 
-The paper sequence and videos are retained from [Lab09 (2023)](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2023/tree/main/Lab09) and [Lab07 (2025)](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025/tree/main/Lab07). The Berkeley PDFs above are supplementary selections for this edition; they are not asserted to be the exact slide deck used previously.
+The paper sequence and videos are retained from [Lab09 (2023)](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2023/tree/main/Lab09) and [Lab07 (2025)](https://github.com/Tensor-Reloaded/Advanced-Topics-in-Neural-Networks-Template-2025/tree/main/Lab07).
 
 - DQN discussions: [video 1](https://www.youtube.com/watch?v=rFwQDDbYTm4), [video 2](https://www.youtube.com/watch?v=nOBm4aYEYR4).
 - [AlphaZero discussion](https://www.youtube.com/watch?v=O1b0cbgpRBw).

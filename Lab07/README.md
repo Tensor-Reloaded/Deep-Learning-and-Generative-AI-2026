@@ -12,6 +12,8 @@ Lab notebook
 2. Complete "A Gentle Introduction to Geometric Graph Neural Networks" until the end of Week 8, and make a "human generated" report of what you learnt.
 <br>
 3. Complete either the "PyTorch Geometric Workshop" or the "e3nn Workshop" until the end of Week 12, and make a "human generated" report summarizing what you did and what you learnt.
+<br>
+4. Train Equivariant Steerable CNNs on an image dataset that includes images from different angles and rotations. Compare the escnn performance against models without equivariant CNN layers, and make a "human generated" report summarizing what you did and what you learnt.
 </details>
 
 
@@ -31,3 +33,4 @@ Advanced (for students who want to learn more):
 * e3nn Workshop: https://e3nn.org/e3nn-tutorial-mrs-fall-2021/
 * Open Graph Benchmark: https://ogb.stanford.edu/
 * DeepChem tutorials: https://deepchem.readthedocs.io/en/latest/get_started/tutorials.html
+* Equivariant Steerable CNNs: https://github.com/QUVA-Lab/escnn

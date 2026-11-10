@@ -13,7 +13,7 @@ Lab notebook
 <br>
 3. Complete either the "PyTorch Geometric Workshop" or the "e3nn Workshop" until the end of Week 12, and make a "human generated" report summarizing what you did and what you learnt.
 <br>
-4. Train Equivariant Steerable CNNs on an image dataset that includes images from different angles and rotations. Compare the escnn performance against models without equivariant CNN layers, and make a "human generated" report summarizing what you did and what you learnt.
+4. Train Equivariant Steerable CNNs until the end of Week 12 on an image dataset that includes images from different angles and rotations. Compare the escnn performance against models without equivariant CNN layers, and make a "human generated" report summarizing what you did and what you learnt.
 </details>
 
 

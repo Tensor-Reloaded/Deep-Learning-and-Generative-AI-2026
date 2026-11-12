@@ -64,3 +64,6 @@ You have to extend component 1 with the following aspects:
     * (a) A strong ablation study
     * (b) Good results
 6. Leap in understanding: Choose a different problem/method, other than the one which was the focus of your project. Based on the progress from 1-5, apply what you learned, explain how to apply, and what is the result.
+
+You will be graded based on how far you advanced. If you did only 1-4, you should expect fewer points than also doing 5a, or 5b, or 6.
+Do not expect that 5a, 5b and 6 are easy to achieve.

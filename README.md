@@ -32,6 +32,7 @@ Start with the [2026 local setup](./SETUP.md) and run the included offline CPU s
 * [Lab05](./Lab05): Object Detection: slides/papers and a 2-hour **[Fast R-CNN practical notebook (Colab)](https://colab.research.google.com/github/Tensor-Reloaded/Deep-Learning-and-Generative-AI-2026/blob/main/Lab05/ObjectDetection.ipynb)** (Homework 3: Complex experiments on Noisy CIFAR-100).
 * [Lab06](./Lab06): Reinforcement Learning: Q-learning and DQN, AlphaGo Zero / AlphaZero, MuZero and ReBeL — papers and videos.
 * [Lab07](./Lab07): Geometric Deep Learning
+* [Lab09](./Lab09): Sequence models, RNN, LSTM, xLSTM, Mamba, Mamba-2 (Homework 4: Projects)
 
 
 

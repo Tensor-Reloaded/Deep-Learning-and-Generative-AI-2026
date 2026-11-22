@@ -11,11 +11,13 @@
 [The Evolution of Memory-Based Deep Sequential Models](./UnifiedFramework-SequenceModels.md):
 * LSTM paper: https://deeplearning.cs.cmu.edu/F23/document/readings/LSTM.pdf
 * xLSTM paper: https://arxiv.org/abs/2405.04517
-* S4 paper: https://arxiv.org/abs/2111.00396
-* Mamba paper: https://arxiv.org/abs/2312.00752
-* Mamba-2 (SSD) paper: https://arxiv.org/abs/2405.21060
-* Mamba-3 paper: https://arxiv.org/abs/2603.15569
-
+  * xLSTM summary: https://aman.ai/primers/ai/xLSTM/
+* SSMs:
+  * S4 paper: https://arxiv.org/abs/2111.00396
+  * Mamba paper: https://arxiv.org/abs/2312.00752
+  * Mamba-2 (SSD) paper: https://arxiv.org/abs/2405.21060
+  * Mamba-3 paper: https://arxiv.org/abs/2603.15569
+  * Diagonal Equivalence in State Space Models: Characterization, Retrieval Rank, and Selective Extensions: https://arxiv.org/abs/2611.03101
 ***
 
 For self-study (for students who want to pass):

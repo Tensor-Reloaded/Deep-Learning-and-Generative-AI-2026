@@ -1,4 +1,4 @@
-You may choose any projects from this list: [Possible Projects](https://discord.com/channels/1553789160412676247/1553789161146818631/1554145426125357156). You may also propose projects from "Introduction to Research" as long as they are correlated with DL. 
+You may choose any projects from this list: [Possible Projects](https://docs.google.com/document/d/14u44G8IcRtsRwTPCYr6euLpvRtoXyS8GHX9EBZpTSEk/edit?tab=t.0). You may also propose projects from "Introduction to Research" as long as they are correlated with DL. 
 
 ---
 

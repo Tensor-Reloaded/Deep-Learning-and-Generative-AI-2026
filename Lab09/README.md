@@ -18,6 +18,7 @@
   * Mamba-2 (SSD) paper: https://arxiv.org/abs/2405.21060
   * Mamba-3 paper: https://arxiv.org/abs/2603.15569
   * Diagonal Equivalence in State Space Models: Characterization, Retrieval Rank, and Selective Extensions: https://arxiv.org/abs/2611.03101
+  * SSM summary: https://chus.space/blog/2024/ssm_1_context/
 ***
 
 For self-study (for students who want to pass):
